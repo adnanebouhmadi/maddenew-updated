@@ -16,9 +16,9 @@ foreach ($storageDirs as $dir) {
     }
 }
 
-require _DIR_ . '/../vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
-$app = require_once _DIR_ . '/../bootstrap/app.php';
+$app = require_once __DIR__ . '/../bootstrap/app.php';
 
 // توجيه مجلد التخزين إلى /tmp
 $app->useStoragePath('/tmp/storage');
