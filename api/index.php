@@ -2,7 +2,7 @@
 
 require _DIR_ . '/../vendor/autoload.php';
 
-$app = require_once _DIR_ . '/../bootstrap/app.php';
+$app = require_once __DIR__ . '/../bootstrap/app.php';
 
 $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
 
